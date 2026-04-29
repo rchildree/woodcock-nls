@@ -14,6 +14,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Neohellenic";
+  src: url("fonts/Neohellenic-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light;
   --paper: #fdfdfd;
@@ -21,7 +29,7 @@
   --ink: #202124;
   --muted: #6b7280;
   --rule: #d1d5db;
-  --accent: #5d121f;
+  --accent: #5d1247;
   --accent-soft: #f4e6ea;
   --accent-glow: rgba(93, 18, 31, 0.14);
   --review: #f3f4f6;
@@ -118,7 +126,8 @@ body {
 .content {
   padding-top: 32px;
   font-size: 1.1rem;
-  padding-bottom:33svh
+  padding-bottom:33svh;
+  hyphens: auto;
 }
 
 h1,
@@ -203,6 +212,7 @@ a {
 	/* border-bottom: 1px dotted var(--accent); */
 	background: #5d121f0c;
 	padding-inline:.5ch;
+	hyphens: none;
 }
 
 :is(h1, h2, h3, h4, h5, h6) :lang(la) {
