@@ -306,6 +306,8 @@ button.fn-num[aria-expanded="true"] {
 	line-height: normal;
 }
 
+li + li:not([class]):has(> p:not([class])) {margin-top:.5rem;}
+
 .sc,
 .alpha,
 .nums,
@@ -406,7 +408,7 @@ li > .roman > li::before {
 
 .citation-list {
   list-style: none;
-  margin: 0.95rem 0 1.2rem;
+  margin: 1rem 0 1rem;
   padding: 0;
   font-size: .85em;
 }
