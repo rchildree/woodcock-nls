@@ -148,6 +148,7 @@ h1 {
   font-style: italic;
   font-weight: normal;
   text-align: center;
+  text-wrap: balance;
 }
 
 h1 span.number {
@@ -305,6 +306,8 @@ button.fn-num[aria-expanded="true"] {
 	font-size: 120%;
 	line-height: normal;
 }
+
+ol, ul {list-style-type: none;}
 
 li + li:not([class]):has(> p:not([class])) {margin-top:.5rem;}
 
@@ -516,6 +519,17 @@ fieldset .citation-list:last-child .citation-item:last-child {
    then share the same baseline, even if one side wraps. */
 .bracketsLMR {
   --rows: 3;
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  grid-template-rows: repeat(var(--rows), auto);
+  column-gap: 1.5rem;
+  row-gap: 0.4rem;
+  align-items: baseline;
+  margin: 1.25rem 0;
+}
+
+.bracketsLMR4 {
+  --rows: 4;
   display: grid;
   grid-template-columns: max-content max-content 1fr;
   grid-template-rows: repeat(var(--rows), auto);
