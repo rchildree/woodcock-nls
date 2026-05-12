@@ -214,6 +214,8 @@ a {
 	background: #5d121f0c;
 	/* background: #ff3f60b2; */
 	padding-inline:.5ch;
+	-webkit-box-decoration-break: clone;
+  	box-decoration-break: clone;
 	hyphens: none;
 }
 
