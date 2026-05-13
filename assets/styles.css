@@ -204,6 +204,8 @@ p {
 
 a {
   color: var(--accent);
+  text-decoration: underline #b74494 dashed 1px;
+  text-underline-offset: 4px;
 }
 	
 :lang(la) {
